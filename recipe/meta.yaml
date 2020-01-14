@@ -1,13 +1,13 @@
 {% set name = "dagster_cron" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.7.post0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 74f504d3294e0e68b1de15341bc574803d3101e2c2d721b69929dd66c3cfb9d7
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name|replace('_', '-') }}/{{ name|replace('_', '-') }}-{{ version }}.tar.gz"
+  sha256: cfdf53527d5ae414efa113b760bf8ca30755e67a7a76c61781bb14a996d463aa
 
 build:
   number: 0
